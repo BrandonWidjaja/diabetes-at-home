@@ -1,0 +1,58 @@
+{{#if darkMode}}
+        <body class="dark"></body>
+{{/if}}
+
+{{> clinician_sidenav page="clinician_register_patient" title="Register Patient"}}
+
+<main class="clinician_main">
+    <h3 class="notification">Please fill in this form to create an account for your patient.</h3>
+    <form class="big_background" action="/clinician/register-patient" method="POST">
+        <section class="setting_contanier">
+            <article class="personal_info">
+                <label for="Email"></label><h5>Email:</h5> </label>
+                <input type="text" placeholder="Email" name="email" required>
+            </article>
+
+            <article class="personal_info">
+                <h5>First name:</h5>
+                <input type="text" placeholder="First name" name="nameGiven" pattern="^[^*|:<>[\]{}`()';@&$]+$" title="Please do not enter any special characters" required>
+            </article>
+
+            <article class="personal_info">
+                <h5>Last name:</h5>
+                <input type="text" placeholder="Last name" name="nameFamily" pattern="^[^*|:<>[\]{}`()';@&$]+$" title="Please do not enter any special characters" required>
+            </article>
+
+            <article class="personal_info">
+                <h5>Screen name:</h5>
+                <input type="text" placeholder="Screen name" name="nameScreen" pattern="^[^*|:<>[\]{}`()';@&$]+$" title="Please do not enter any special characters" required>
+            </article>
+        </section>
+        <section class="setting_contanier">
+            <article class="personal_info">
+                <h5>Year born:</h5>
+                <input type="number" placeholder="Year born" name="yearBorn" min="1900" max="2022" step="1" required>
+            </article>
+
+            <article class="personal_info">
+                <p class="alert" style="color: #f28379;">{{error}}</p>
+            </article>
+
+            <article class="personal_info">
+                <label for="Password"></label><h5>Password:</h5></label>
+                <input type="password" placeholder="" name="password" required>
+            </article>
+
+            <article class="personal_info">
+                <label for="Confirm_Password"></label><h5>Confirm Password:</h5></label>
+                <input type="password" placeholder="Enter password here, must be at least 8" name="password2" required pattern="^(?=.*\d).{8,}$" title="Must be at least 8 characters">
+            </article>
+
+            <article class="personal_info hidden">
+                <label for="Confirm_Password"></label><h5>Confirm Password:</h5></label>
+                <input type="password" placeholder="Enter password here, must be at least 8" name="password2" pattern="^(?=.*\d).{8,}$" title="Must be at least 8 characters">
+            </article>
+            <section class="personal_info register_page_btn"><button class="light_button" id="register_btn"><a href=""><h5>Register</h5></a></button></section>
+        </section>
+    </form>
+</main>

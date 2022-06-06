@@ -1,0 +1,49 @@
+{{> sidenav login=true page='settings' patient=patient}}
+<main class="content setting_content">
+    <h3>{{user.nameScreen}}</h3>
+    <form class="big_background setting_hid" action="/update-user" method="post">
+        <section class="setting_contanier">
+            <article class="personal_info setting_phone">
+                <h5>Full name:</h5>
+                <p>{{user.nameGiven}} {{user.nameFamily}}</p>
+            </article>
+
+            <article class="personal_info setting_phone">
+                <label for="Email"></label><h5>Email:</h5> </label>
+                <p>{{user.email}}</p>
+            </article>
+
+            <article class="personal_info setting_phone">
+                <label for="Password"></label><h5>New Password:</h5></label>
+                <input type="password" placeholder="Enter password here, must be at least 8" name="Password" pattern="^(?=.*\d).{8,}$" title="Must be at least 8 characters">
+            </article>
+
+            <article class="personal_info setting_phone">
+                <label for="Confirm_Password"></label><h5>Confirm Password:</h5></label>
+                <input type="password" placeholder="Enter password here, must be at least 8" name="Confirm_Password" pattern="^(?=.*\d).{8,}$" title="Must be at least 8 characters">
+            </article>
+        </section>
+    
+        <section class="setting_contanier">
+           <article class="personal_info setting_phone">
+                <h5>Year Born:</h5>
+                <p>{{user.yearBorn}}</p>
+            </article>
+
+            <article class="personal_info setting_phone">
+                <label for="Bio"></label><h5>Bio:</h5> </label>
+                <textarea class="input" name="bio" >{{user.bio}}</textarea> 
+            </article>
+            <section class="center_btn"><button class="pink_button" type="submit"><h5>Update</h5></button></section>
+        </section>
+    </form>
+    {{#if darkMode}}
+        <body class="dark"></body>
+    {{/if}}
+    <form action="/patient/dark-mode">
+        <button class="theme-toggle-button"><h5>Light/Dark Theme</h5></button> 
+    </form>
+</main>
+{{> bottomnav page='settings'}}
+
+

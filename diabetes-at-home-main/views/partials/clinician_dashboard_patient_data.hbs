@@ -1,0 +1,11 @@
+{{#if value}}
+    {{#if (checkThreshold value lowerThreshold upperThreshold)}}
+        <td style="color: #f28379;">{{value}}</td>
+        {{else}}<td>{{value}}</td>
+    {{/if}}
+    {{else}}
+        {{#if requirement}}
+            <td style="color: #f28379;">---</td>
+            {{else}}<td>Not required</td>
+        {{/if}}
+{{/if}}

@@ -1,0 +1,1913 @@
+/* Set up type and colour */
+:root {
+    /* Font Sizes */
+    --text-title-desktop: 60px;
+    --text-subheading-desktop: 36px;
+    --text-title: 33px;
+    --text-subheading: 26px;
+    --text-big: 20px;
+    --text-medium: 18px;
+    --text-small: 15px;
+    --text-smaller: 13px;
+    --text-smallest:10px;
+    /* Fonts */
+    --font-family-body: "PT Serif", serif;
+    --font-family-heading: "Poppins", sans-serif;
+    /* Background Colours */
+    --color-background-white: #ffffff;
+    --color-background-light: #eff6f9;
+    --color-background-lightmedium: #9FC0D6;
+    --color-background-medium: #466fa6;
+    --color-background-dark: #193773;
+    --color-background-lightaccent: #f2c1ae;
+    --color-background-accent: #f28379;
+    --color-background-grey:#7070701c;
+
+    /* Font Colours */
+    --color-text-black: #000000;
+    --color-text-white: #ffffff;
+    --color-text-grey: #707070;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+/****************** font css style ************************/
+.poppins60{
+    font-size: var(--text-title-desktop);
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    text-align: center;
+}
+
+.poppins36{
+    font-size: var(--text-subheading-desktop);
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    text-align: center;
+}
+
+.poppins33{
+    font-size: var(--text-title);
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    text-align: center;
+}
+
+.poppins26 {
+    font-size: var(--text-subheading);
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+}
+
+.PT20{
+    font-family: var(--font-family-body);
+    font-size: var(--text-medium);
+    color: var(--color-text-black);
+    text-align: center;
+    padding: 1%;
+}
+
+/******************* desktop font style *****************/
+h1 {
+    font-size: var(--text-title-desktop);
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    text-align: center;
+}
+
+.dark h1 {
+    color: #ffffff;
+}
+
+h2 {
+    font-size: var(--text-subheading-desktop);
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    text-align: center;
+}
+
+.dark h2 {
+    color: #ffffff;
+}
+
+h3 {
+    font-size: var(--text-subheading);
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    text-align: center;
+}
+
+.dark h3{
+    color: #ffffff;
+}
+
+.dark .stayBlack {
+    color: #000000;
+}
+
+h4 {
+    font-size: var( --text-big);
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    text-align: center;
+}
+
+.dark h4 {
+    color: #ffffff;
+}
+
+h5 {
+    font-family: var(--font-family-heading);
+    font-size: var(--text-medium);
+    color: var(--color-text-black);
+    text-align: center;
+    padding: 1%;
+}
+
+h6 {
+    font-family: var(--font-family-heading);
+    font-size: var(--text-subheading);
+    color: var(--color-background-dark);
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+h7 {
+    font-family: var(--font-family-heading);
+    font-size: var(--text-small);
+    text-align: center;
+}
+
+.bigger_p {
+    font-size: var(--text-big);
+    font-weight: 700;
+}
+
+.bold_p {
+    font-weight: 700;
+}
+
+p {
+    font-family: var(--font-family-body);
+    font-size: var(--text-medium);
+    color: var(--color-text-black);
+    text-align: center;
+    padding: 1%;
+}
+
+.dark .edit_data p {
+    color: #000000;
+}
+
+.smaller_p {font-size: var(--text-smaller);}
+
+.smallest_p { font-size:var(--text-smallest);}
+
+#bloodGlucoseValue, #weightValue, #exerciseValue, #dosesOfInsulinValue {
+    font-size: var(--text-subheading);
+    font-weight: 700;
+}
+
+
+/****************** header style ************************/
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    height: 7.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+#hamburger {
+    margin-right: auto;
+}
+
+
+.clinician_header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background: #193773;
+    color: var(--color-background-white);
+    font-size: var(--text-small);
+    align-items: center;
+    z-index: 100;
+}
+
+.icons {
+    width: 4vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    cursor: pointer;
+}
+
+.dark .icons {
+    fill: #ffffff;
+}
+
+.icons_small_left{
+    width: 15%;
+    margin-left: 4%;
+    margin-right: 4%;
+    float:left;
+}
+
+.icons_small_right{
+    width: 13%;
+    margin-left: 4%;
+    margin-right: 4%;
+    float:right;
+    right: 5px;
+    position:absolute;
+}
+
+.icons_profile {
+    width: 4%;
+    margin: 3%;
+    position: absolute;
+    left: 1%;
+}
+
+.icon_settings{
+    top: 10%;
+    width: 4%;
+    position: absolute;
+    right: 2% ;
+}
+
+/****************** body css style ************************/
+
+/************************* LOGO ***************************/
+
+/*logo container*/
+.logo_container {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+/* Centered logo text */
+.logoText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dark .logoText {
+    text-shadow: 0 5px 15px var(--color-background-light);
+}
+
+.logo_image {
+    width: 80%;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+/********************* body display **********************/
+.content{
+    padding-top: 12vh;
+    margin: 0 8%;
+    text-align: center;
+}
+
+body {
+    background-color: var(--color-background-white);
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    height:100%;
+    background-attachment: fixed;
+}
+
+body.dark {
+    /* Background Colours */
+    --color-background-white: #272727;
+    --color-background-light: #193773;
+    --color-background-lightmedium: #466fa6;
+    --color-background-medium: #9FC0D6;
+    --color-background-dark: #eff6f9;
+    --color-background-lightaccent: #f2c1ae;
+    --color-background-accent: #f28379;
+    --color-background-grey:#7070701c;
+
+    /* Font Colours */
+    --color-text-black: #ffffff;
+    --color-text-white: #000000;
+    --color-text-grey: #707070;
+}
+
+.clinician_body{
+    background-color: #EFF6F9;
+    
+}
+
+.body_icons {
+    width: 10%;
+}
+
+.about{
+    background-image: linear-gradient(#FFFFFF,#4F6EA2);
+}
+
+.leaderboard_background {
+    background: linear-gradient(180deg, rgba(25,55,115,1) 7%, rgba(98,131,196,1) 30%, rgba(255,255,255,1) 40%);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.dark.leaderboard_background  {
+    background: #000000;
+}
+
+.item_center {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/******************** video **********************/
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#desc {
+    padding-bottom: 5%;
+    grid-area: desc;
+}
+#video {
+    position: relative;
+    width: 80%;
+    height: 0;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    align-self: center;
+}
+
+.video_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    height:100%;
+    grid-area: desc;
+}
+
+/********************** form *****************************/
+form[id$="Form"]{
+    width: 70%;
+}
+
+/********************** dashboard ************************/
+
+#clinician_message {
+    width: 100%; 
+    height:100%;
+    grid-area: heading;
+}
+.dashboard_content {
+    margin: 5%;
+    margin-top: 8%;
+}
+
+.dash_left{
+    background-color: var(--color-background-lightmedium);
+    width: 90%;
+    height: 70vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-right:5%;
+    display: flex;
+    flex-direction: column;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.big_background{
+    background-color: var(--color-background-lightmedium);
+    margin:5%;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.big_background_notes{
+    background-color: var(--color-background-lightmedium);
+    margin:5%;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.setting_contanier{
+    margin:2%;
+    width: 50%;
+}
+
+.setting_container button{
+    text-align: center;
+}
+
+.personal_info{
+    text-align: left;
+    margin: 5%;
+}
+
+.personal_info h5 {
+    text-align: left;
+}
+
+.contianer_note{
+    display: flex;
+    background-color: #eff6f9;
+    width: 75%;
+    margin:1%;
+    border-radius: 5px;
+}
+
+.note{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10%;
+}
+
+#notes {
+    margin-top: 5%;
+    font-family: var(--font-family-heading);
+    color: var(--color-text-grey);
+}
+
+.time{
+    position: absolute;
+    right:6%;
+}
+
+.data_display {
+    display: flex;
+    width: 100%;
+    grid-area: sec2;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    bottom: 0;
+}
+/*********************** input *************************/
+.input_data {
+    justify-content: center !important;
+    height:20%;
+}
+
+input[name="email"] {
+    background-image: url(../res/email_profile.svg);
+    z-index:1;
+}
+
+input[type=password] {
+    background-image: url(../res/password_lock.svg);
+}
+
+input[name="email"], input[type=password] {
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+input[type=text], input[type=password], input[type=number] {
+    width: 97%;
+    padding: 12px 40px;
+    margin: 8px 5px;
+    display: inline-block;
+    border: 1px solid;
+    border-color: var(--color-text-grey);
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: var(--font-family-heading);
+    -moz-appearance: textfield;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
+    border: 2px solid;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[name="comment"]{
+    height: 200px;
+}
+
+input[name="logout"] {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px !important;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+input[name="logout"]:hover {
+    color: #466fa6;
+}
+
+span.psw, span.rememberme {
+    padding: 30px 0;
+    font-family: var(--font-family-heading);
+    font-size: var(--text-small);
+}
+
+.dark .rememberme {
+    color:#ffffff;
+}
+
+
+/******************** container *****************************/
+.container{
+    background-color: var(--color-background-light);
+    filter:drop-shadow(5px 5px 5px rgb(0,0,0,0.16));
+    border-radius: 35px;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+.column_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 3vh;
+}
+
+.login_container {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boxes_container {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comment {
+    display: none;
+}
+
+.timeInComment {
+    position: absolute;
+    right:4%;
+}
+
+/* after data has been entered */
+.enteredData {
+    height: 20vh;
+    width: 40vh;
+}
+
+.info_square_container {
+    background-color: var(--color-background-accent);
+    border-radius: 10px;
+    width: 30%;
+    margin: 3%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.info_rectangle_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4%;
+    background-color: var(--color-background-accent);
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    min-height: 43%;
+    margin: 3%;
+    overflow: hidden;
+}
+
+.info_container{
+    background-color: var(--color-background-lightmedium);
+    width: 100%;
+    padding: 4%;
+    border-radius: 20px;
+}
+
+.overall{
+    background-color: #ccc;
+    border-radius: 25px;
+    padding-right: 4%;
+    padding-top:2%;
+    padding-left:2%;
+    padding-bottom: 7%;
+    margin-left: 5%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+    width: 65%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+}
+
+.patient_right{
+    margin-bottom: 5%;
+    margin-right: 5%;
+    background-color: #ccc;
+    border-radius: 25px;
+    padding-right: 5%;
+    padding-top:2%;
+    padding-left:3%;
+}
+
+.patient_right .info_container{
+    margin-bottom: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8%;
+}
+
+
+.history_link{
+    padding-top:8%;
+    padding-left: 70%;
+    text-decoration:underline;
+}
+
+#past_notes_link {
+    margin: 10% 0;
+    text-decoration: underline;
+    text-align: center;
+    font-size: var(--text-big);
+}
+
+.data_container {
+    margin: 4% 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.chart_container {
+    background-color: var(--color-background-light);
+    border-radius: 10px;
+    height: 50vh;
+}
+
+.dark .chart_container {
+    background-color: var(--color-background-dark);
+}
+
+.single_chart_container {
+    margin-top: 10%;
+}
+
+#healthDataChart {
+    padding: 2%;
+}
+
+.more_info{
+    text-align: left;
+    margin: 5% 5% 10% 5%;
+    color: var(--color-background-white);
+}
+
+.leaderboard_title_container {
+    color:var(--color-text-black);
+    text-shadow: 3px 3px 5px var(--color-background-lightmedium);
+    margin: 2% 0;
+}
+
+.dark .leaderboard_title_container {
+    text-shadow: 3px 3px 5px var(--color-background-light);
+}
+
+.banner_container {
+    background-color:var(--color-background-dark);
+    color:var(--color-text-white);
+    margin: 2%;
+    padding: 2% 0;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    line-height: 5vh;
+    align-items: center;
+}
+
+.change_btn img{
+    transform: rotateY(180deg);
+    margin-left: 90%;
+    display: block;
+}
+
+canvas {
+    display: flex;
+    align-items: center;
+}
+
+/***************** animation *******************/
+.lineUp {
+    animation: 2s anim-lineUp ease-out infinite;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+/***************** checkmark *******************/
+
+/* On mouse-over, add a grey background color */
+.required:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.required input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.required:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.required input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.required .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/******************** lines *************************/
+hr {
+    width: 96%;
+    background-color: var(--color-background-white);
+    height: 2px;
+    margin-bottom: 2px;
+}
+
+.dark hr {
+    background-color: #ffffff;
+}
+
+/********************* a tag ****************************/
+a, a:hover {
+    color: var(--color-text-white);
+    text-decoration: none;
+}
+
+.dark a, a:hover {
+    color: #ffffff;;
+}
+
+#forgetPassword {
+    color: var(--color-text-black);
+}
+
+.blacktext {
+    color: var(--color-text-black);
+}
+
+/******************** button ****************************/
+button {
+    display: inline-flex;
+    background-color: var(--color-background-light);
+    color: var(--color-text-black);
+    text-align: center !important;;
+    justify-content: center !important;;
+    font-size: var(--text-big);
+    font-weight: bold;
+    font-family: var(--font-family-heading);
+    padding: 10px 25px !important;;
+    border-radius: 12px !important;;
+    cursor: pointer;
+    box-shadow: 0 9px 5px 0 rgba(0, 0, 0, 0.2) !important;;
+    z-index: 100;
+}
+
+button:active {
+    box-shadow: 0 9px 5px 0 rgba(0, 0, 0, 0.6);
+    transform: translateY(4px);
+}
+
+.white_button {
+    background-color: var(--color-background-white);
+    margin-bottom: 5%;
+}
+
+.pink_button {
+    background-color: var(--color-background-accent);
+    width: 50%;
+}
+
+.lightmedium_button {
+    background-color: var(--color-background-lightmedium);
+    color: var(--color-text-black);
+}
+
+.medium_button {
+    background-color: var(--color-background-medium);
+    color:var(--color-background-white);
+    margin-top: 5%;
+}
+
+.dark_button {
+    background-color: var(--color-background-dark);
+    color:var(--color-background-white);
+}
+
+
+.clinician_nav_btn{
+    border-radius: 5px;
+    background-color:#EFF6F9;
+    padding: 0.7%;
+    width: 12%;
+    position: absolute;
+    right: 10%;
+    margin-right: 3%;
+}
+
+.dark .phone_clinician {
+    color:#000000;
+}
+
+.dark .clinician_nav_btn h5 {
+    color:#000000;
+}
+
+.dark .clinician_nav_btn2 h5 {
+    color:#000000;
+}
+
+.clinician_nav_btn2{
+    border-radius: 5px;
+    background-color:#EFF6F9;
+    padding: 0.7%;
+    width: 15%;
+    position: absolute;
+    right: 26%;
+    margin-right: 3%;
+}
+
+.save-btn{
+    text-align: center;
+    padding-left: 90%;
+}
+
+.center_btn{
+    text-align: center;
+}
+
+.theme-toggle-button {
+    background-color: var(--color-background-accent);
+    width: 50%;
+    transition: 1s;
+    transform: scale(1);
+}
+
+#chart_button {
+    background-color: #ffffff;
+    padding: 0.5% 3% !important;
+}
+
+.comment_btn{
+    background-color: #9FC0D6;
+    border-radius: 5px;
+    padding: 0.7%;
+    left:20%;
+}
+
+.reaserch_btn {
+    background-color: #424245;
+}
+
+.register_patient{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    top:3;
+    margin-bottom: 2%;
+}
+
+.register_page_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register{padding:1.5%}
+
+/******************* graph ****************/
+.history_background{
+    padding-top: 5%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:5%;
+    margin-bottom:5%;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:400px 400px;
+    grid-gap: 5%;
+}
+
+.graph_data h3{
+    text-align: left;
+}
+
+.graph {
+    position: absolute;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.25);
+    width: 35%;
+    height: 40%;
+    background-color: #9FC0D6;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+}
+
+
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 14vh;
+}
+
+/*for about pages*/
+.bottom_button {
+    margin: 8%;
+}
+
+/******************* sidebar ****************/
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 10vh;
+    background-color:var(--color-background-white);
+    box-shadow: 4px 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/**************** navigation bar **********************/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #466fa6;
+}
+
+.sidenav input {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font: var(--font-family-body);
+    background-color: white;
+    cursor: pointer;
+}
+
+.sidenav input:hover {
+    color: #466fa6;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex: 1;
+    text-decoration: none;
+}
+
+
+/******************* dashboard table ****************/
+.flex-btn {
+    width: 100%;
+    position:none;
+}
+
+
+.cilnician_nav {
+    position:absolute;
+    left:10%;
+}
+
+
+.dashboard_flex{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    margin-top: 1%;
+}
+
+.data_history_table{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.flex_left {
+    background-color: var(--color-background-lightmedium);
+    height:100%;
+    width: 70%;
+    margin-right: 2%;
+    margin-left: 5%;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+}
+
+.flex_right {
+    background-image: linear-gradient(#FFFFFF,#4F6EA2) ;
+    height:75vh;
+    float: right;
+    width: 90%;
+    flex: inline;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+
+.flex_btn {
+    display: flex;
+}
+
+.container_comment {
+    margin: 3%;
+    border-radius: 20px;
+    padding:0;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    float:left;
+    margin: 1%;
+    width: 95%;
+}
+
+tr{
+    vertical-align: middle;
+}
+
+th {
+    padding: 8px;
+    border:none;
+    text-align: center;
+    font-size: var(--text-big);
+}
+
+td {
+    border:none;
+    padding: 8px;
+    width: 20%;
+    text-align: left;
+    line-height: 30px;
+}
+
+.dashboard_table td {
+    border-top: 5px solid var(--color-background-lightmedium);
+    border-bottom: 5px solid var(--color-background-lightmedium);
+}
+td:first-child {
+    border-radius: 25px 0 0 25px;
+    position:relative;
+}
+td:last-child {
+    border-radius: 0 25px 25px 0;
+}
+
+.dash_container {
+    background-color: #EEF5F5;
+}
+
+.title_box{
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    margin: 2%;
+}
+
+
+/******************* dashboard table verticle line ****************/
+.dashboard_table td:after {
+    content: '';
+    display: block;
+    border-left: 1px solid #333;
+    padding: 0;
+    height: 30px;
+    float: right;
+}
+.dashboard_table td:last-child:after {
+    display: none;
+}
+
+/****************** clinician body ***********************/
+.clinician_main{
+    padding-top: 10%;
+}
+
+
+.note_main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.clinician_main h3{
+    margin-left: 8%;
+    float:left;
+}
+
+/***************** podium ******************************/
+.podium_container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 8%;
+    padding-bottom: 2%;
+    border-bottom: 5px solid var(--color-background-dark);
+}
+
+.podium_column{
+    width: 50%;
+    margin: 0 2%;
+}
+
+.podium_user{
+    text-align: center;
+    padding-bottom: 2%;
+    inline-size: 100%;
+    word-break: break-all;
+}
+
+.podium_rank{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2%;;
+    background: linear-gradient(var(--color-background-lightaccent), var(--color-background-accent));
+    border-radius: 10px;
+}
+
+.rank_first{
+    height: 40vh;
+}
+
+.rank_second{
+    height: 30vh;
+}
+
+.rank_third{
+    height: 20vh;
+}
+
+/****************** footer style ***********************/
+
+footer {
+    background-color: #ffffff;
+    box-shadow: 4px 0 5px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 7.4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/************** pop up windows ****************/
+.popup {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 10%;
+    min-height: 50%;
+    width: 75%;
+    position: absolute;
+    z-index: 1;
+    background-color: #193773;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 5%;
+}
+
+.popup h2 {
+    color: white;
+    padding-top: 15%;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.popup .closebtn {
+    position: absolute;
+    top: 0;
+    right: 7.5%;
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+}
+
+.popup form {
+    height: 40%;
+}
+
+.popup textarea {
+    width: 70% !important;
+    height: 100%;
+    border-radius: 5%;
+    resize: none;
+}
+
+/***************** textarea ************************/
+textarea {
+    width: 100%;
+    padding: 2.5%;
+    display: inline-block;
+    border: 1px solid;
+    border-color: var(--color-text-grey);
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: var(--font-family-heading);
+    resize: none;
+    height: 19vh;
+}
+
+textarea:focus {
+    border: 2px solid;
+}
+/************* desktop size responsive ****************/
+#heading {
+    grid-area: heading;
+    text-align: center;
+    margin: 2%;
+}
+.subheading {
+    grid-area: subheading;
+    margin: 2%;
+}
+
+.sec1 {grid-area: sec1;}
+.sec2 {grid-area: sec2;}
+.sec3 {grid-area: sec3;}
+.sec4 {grid-area: sec4;}
+.sec5 {grid-area: sec5;}
+.more_info {grid-area: sec3;}
+.logo {grid-area: logo;}
+
+/** about pages **/
+.about_grid_format {
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    grid-gap: 4rem;
+    grid-template-areas:
+    "heading heading"
+    "desc  desc"
+    "sec1  sec1"
+    "sec2  sec2"
+    "sec3  sec3";
+}
+
+/*main & edit data page*/
+.mainpage_grid_format {
+    margin-left: 18vh;
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    grid-row-gap: 2rem;
+    grid-column-gap:1rem;
+    grid-template-areas:
+        "heading subheading"
+        "sec1  sec2"
+        "sec3  sec3"
+}
+
+/*welcome & login page*/
+.login_grid_format {
+    overflow: hidden;
+    position: fixed;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-row-gap: 2rem;
+    grid-column-gap:2rem;
+    grid-template-areas:
+        "logo sec1"
+}
+
+.leaderboard_grid_format {
+    display: grid;
+    grid-template-areas: "logo sec1";
+    margin: 5%;
+    align-items: end;
+    grid-column-gap: 2vw;
+}
+
+/**************** phone size responsive ********************/
+@media screen and (max-width: 450px) {
+    /**** phone font style ****/
+    h1 {font-size: var(--text-title);}
+    h2 {font-size: var(--text-subheading);}
+    h6 {font-size: var(--text-small) !important; font-weight: 400;}
+    p {font-size: var(--text-small);}
+    .bigger_p {font-size: var(--text-medium);}
+    h5 {font-size: var(--text-smaller);}
+    th, td {font-size:var(--text-smallest);}
+    #bloodGlucoseValue, #weightValue, #exerciseValue, #nsulinValue {
+        font-size: var(--text-big);
+    }
+    .notification {font-size: var(--text-small);}
+
+    /** clinician **/
+    .cilnician_nav {font-size: var(--text-medium);}
+    .phone_clinician {font-size:5px;}
+    .info_contianer h3{font-size: var(--text-medium);}
+    .info_contianer p, .info_contianer label{font-size: var(--text-small);}
+    .body_icons {width: 8%;}
+    .history_link{padding-top:25%;}
+    .register{padding:2.5%}
+
+    /** grid section **/
+    .about_grid_format {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 2rem;
+    }
+    .mainpage_grid_format {
+        margin-left: 8%;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 1rem;
+    }
+    .login_grid_format {
+        padding-top: 15vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /** containers **/
+    .boxes_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data_display {
+        margin-bottom: 8vh;
+    } 
+    
+    .data_container {
+        justify-content: space-between;
+    }
+
+    .info_rectangle_container {
+        min-height: 148px;
+    }
+
+    .clinician_header{
+        height: 7vh;
+    }
+
+    /** dashboard **/
+    .dashboard_table{
+        width: 100%;
+    }
+
+    .dashboard_flex, .flex_left, .flex_right{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .clinician_main h3 {
+        margin-left: 2%;
+        text-align: center;
+    }
+
+    .clinician_main{
+        padding-top:20%;
+    }
+
+    .history_background {
+        padding-top: 20%;
+        margin: 5%;
+        margin-bottom: 5%;
+        width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    /** comment **/
+    .comment {
+        display: block;
+    }
+
+    .desktop_comment {
+        display: none;
+    }
+
+    textarea[name="exerciseComment"], textarea[name="bloodGlucoseComment"], textarea[name="weightComment"], textarea[name="insulinComment"]{
+        width: 25vh;
+    }
+
+    .timeInComment {
+        position: relative;
+    }
+
+    /** note **/
+    .note{
+        margin-top: 25%;
+    }
+
+    .contianer_note{
+        width: 67%;
+    }    
+
+    .note_main {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 75%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px;
+    }
+
+    .sidenav a {font-size: 18px;}
+
+    input[name="logout"] {font-size: 18px !important;}
+
+    /** input info **/
+    input[name="comment"]{
+        display: none;
+    }
+
+    .time{
+        font-size:var(--text-smallest);
+    }
+
+    /** graph **/
+    .graph_data{
+        width: 37%;
+        height: 45%;
+        margin-bottom: 440%;
+    }
+
+    .graph{
+        width: 80%;
+        height: 40%;
+    } 
+
+    /** setting_container **/
+    .setting_hid{
+        background-color: transparent;
+    }
+
+    .big_background{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .big_background.notes {
+        margin: 2%;
+    }
+
+    .setting_contanier{
+        width: 100%;
+        margin: -2%;
+    }
+
+    .setting_phone{
+        background-color:var(--color-background-lightmedium);
+        border-radius: 10px;
+        display: flex;
+        padding:3%;
+        align-items: center;
+        line-height: 5vh;
+    }
+
+
+    .change_btn{
+        right: 15%;
+        position: absolute;
+    }
+
+    .setting_content{
+        padding-top: 10vh;
+        margin: 0;
+        text-align: center;
+    }
+
+    .icon_settings{
+        top: 20%;
+        width: 8%;
+        position: absolute;
+    }
+
+/** clinician_header **/    
+     .clinician_nav_btn{
+         right:18%;
+     }
+
+     .icon_settings{
+         right:10%;
+     }
+
+
+         /** clinician patient flex **/
+    .note_main, .overall{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .overall{
+        width: 85%;
+    }
+
+    .info_container{
+        padding:1%;
+        margin-bottom: 3%;
+    }
+
+    .patient_right {
+        background-color: transparent;
+        padding-left: 7%;
+    }
+
+    .save-btn {
+        padding-left: 0%;
+    }
+
+    .comment_btn {left: 10%;}
+
+}
+
+
+
+/**************** tablet size responsive ********************/
+@media screen and (min-width: 450px) and (max-width: 1024px) {
+    /** tablet font style **/
+    h1 {font-size: var(--text-title);}
+    h2 {font-size: var(--text-subheading);}
+    p {font-size: var(--text-medium);}
+    .notification {font-size: var(--text-medium);}
+
+    /** containers **/
+    .info_container h3{
+        font-size: var(--text-medium);
+    }
+
+    .info_container p, .info_contianer label{
+        font-size: var(--text-smaller);
+    }
+
+    /** note **/
+    .history_link{
+        padding-top:15%;
+    }
+
+    .note_main {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 280px 280px 280px;
+    }
+
+    /** table **/
+    h5, .time {font-size: var(--text-smaller);}
+
+    th, td {font-size:var(--text-smaller);}
+
+    .clinician_header{
+        height: 8vh;
+    }
+
+    /** dashboard **/
+    .dashboard_flex, .flex_left{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .flex_right{width: 90%;}
+    .dashboard_flex{align-items: center;}
+
+    .flex_left{
+        margin-right: 5%;
+        margin-left: 15vh;
+        display: grid;
+        grid-template-columns: 50fr 50fr;
+        grid-template-rows: auto 4fr auto 4fr auto;
+        grid-row-gap: 2rem;
+        grid-column-gap:1rem;
+        grid-template-areas:
+        "heading    heading"
+        "sec1       sec1"
+        "subheading ."
+        "sec2       sec2"
+        "sec3       sec3"
+    }
+
+    /** grid **/
+    .about_grid_format {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-areas:
+            "heading heading"
+            "desc desc"
+            "sec1  sec2"
+            "sec3 sec3";
+    }
+
+    .mainpage_grid_format {
+        margin-left: 8%;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 50fr 50fr;
+        grid-template-rows: auto 4fr auto 4fr auto;
+        grid-row-gap: 2rem;
+        grid-column-gap:1rem;
+        grid-template-areas:
+            "heading    heading"
+            "sec1       sec1"
+            "subheading ."
+            "sec2       sec2"
+            "sec3       sec3"
+    }
+
+    .note {
+        margin-top: 20%;
+    }
+
+    .comment {
+        display:none;
+    }
+
+    .data_container {
+        justify-content: flex-start;
+        margin: 2% 0;
+    }
+
+    .desktop_comment {
+        display:block;
+    }
+
+    input[name="comment"]{
+        display: none;
+    }
+
+    .history_background {
+        padding-top: 10%;
+        grid-template-rows:270px 270px;
+    }
+
+    .graph{
+        height: 30%;
+    }
+
+    .clinician_main{
+        padding-top:15%;
+    }
+
+    /** clinician patient flex **/
+    .note_main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .overall{
+        width: 85%;
+        height: 610px;
+    }
+
+    .info_container{
+        padding: 2%;
+    }
+
+    .patient_right {
+        background-color: transparent;
+        padding-left: 7%;
+    }
+
+    .chart_container {
+        height: 65vh;
+    }
+
+    .icon_settings{
+        top: 20%;
+        width: 5%;
+        position: absolute;
+    }
+
+    .register{padding:2%}
+}
+
+
+    @media screen and (min-width: 450px) and (max-width: 900px){
+        .chart_container{
+            height: 55vh;
+        }
+        .single_chart_container {
+            margin-top: 7%;
+        }
+
+    }
+
+    @media screen and (max-width: 530px){
+        .chart_container {
+            height: 40vh;
+        }
+    }
+
+
+
+
+    @media screen and (max-width: 1024px) {
+    footer {
+        background-color: #ffffff;
+        box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.2);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 7.5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        left:auto;
+        top:auto;
+        padding-top: 0;
+    }
+
+    .content {
+        padding-bottom: 12vh;
+    }
+
+    .leaderboard_background{
+        background: linear-gradient(180deg, rgba(25,55,115,1) 7%, rgba(98,131,196,1) 20%, rgba(255,255,255,1) 30%);
+        overflow:unset;
+    }
+
+    .leaderboard_grid_format {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        align-items: unset;
+    }
+
+    .rank_first{
+        height: 30vh;
+    }
+    
+    .rank_second{
+        height: 23vh;
+    }
+    
+    .rank_third{
+        height: 16vh;
+    }
+
+    h6 {
+        font-size: var(--text-big);
+    }
+
+    .Top3 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .chart_container {
+        height: 30vh;
+    }
+}

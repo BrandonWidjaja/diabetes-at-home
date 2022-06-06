@@ -1,0 +1,21 @@
+<h3>Displaying all users </h3>
+<ul>
+    {{#each users}}
+        <li>{{this.nameFamily}} {{this.nameGiven}} – {{this.email}}</li>
+    {{/each}}
+</ul>
+
+<h3>Clinician User signup</h3>
+<form action="/user/create" method="POST">
+    <input type="text" placeholder="email" name="email"/>
+    <input type="text" placeholder="password" name="password"/>
+    <input type="text" placeholder="family name" name="nameFamily"/>
+    <input type="text" placeholder="given name" name="nameGiven"/>
+    <input type="text" placeholder="screen name" name="nameScreen"/>
+    <input type="number" placeholder="year born" name="yearBorn"/>
+    <input type="text" placeholder="bio" name="bio"/>
+
+    <br>
+
+    <input type="submit"/>
+</form>
