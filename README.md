@@ -9,7 +9,13 @@ This web application was created using MongoDB, Mongoose, Express, Node.js, Hand
 The app allows for patients to log in and record data on a daily basis, storing important data relating to their diabetes, as well as viewing a graph of their past data, and viewing a leaderboard for overall patient engagement. Clinicians may also log in to view the data suibmitted by their patients on a dashboard, as well as enabling and disabling specific fields for each patient, viewing their comments, adding their own notes, adding personalised support messages, defining upper and lower safety thresholds, and viewing a history of each patients data.
 
 The app is deployed on 
-https://info30005-friday1300-team2.herokuapp.com
+https://info30005-friday1300-team2.herokuapp.com 
+The heroku and mongoDB cluster were recently taken down.
+
+
+Some images of the clinician side
+![unknown](https://user-images.githubusercontent.com/80396203/180929548-19ad627f-1be7-45e0-a81c-ba7364e43ac9.png)
+
 
 Demo Logins:
 
