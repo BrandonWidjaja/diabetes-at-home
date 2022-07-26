@@ -1,4 +1,5 @@
 # diabetes-at-home
+# Heroku link is currently down
 
 Web Information Technologies (INFO30005_2022_SM1)
 - The group project specification is provided in the repository under diabetes-at-home/diabetes-at-home-main/Specification/.
